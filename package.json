@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datagov-il",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "data.gov.il MCP — Israel national open-data portal (CKAN API).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-807e96581ff7992aa3ea5410a3d55ad5413553f9e13193df0d463abc59d20e39",
-    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
+    "sourceHash": "v1-c8d44407317f361b0013efa826ded733245e07efe736c43b28fce0e522eff4f2",
+    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
   }
 }
