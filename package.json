@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-datagov-il",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "data.gov.il MCP — Israel national open-data portal (CKAN API).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-datagov-il": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datagov-il"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-datagov-il.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/datagov-il",
   "pipeworx": {
-    "sourceHash": "v1-5ac8ce56f333df522359317659fdc77bf602b1631051723173ae7d3a74f1e708",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "datagov-il",
+    "gatewaySlug": "datagov-il",
+    "sourceHash": "v1-e9cdefe131c4f33c9a8a2cedf844b78752660ad54241097e6226fc474324292c",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
